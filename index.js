@@ -11,7 +11,14 @@ const handleHome = (req, res) => res.send('Hello from home')
 
 const handleProfile = (req, res) => res.send("you are on my profile")
 
-app.get("/", handleHome) 
+const betweenHome = (req, res, next) => {
+    console.log("I'm between")
+    next();
+}
+
+app.use(betweenHome)
+
+app.get("/",handleHome) 
 
 app.get("/profile", handleProfile)
 
