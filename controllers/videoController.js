@@ -1,6 +1,10 @@
 export const home = (req, res) => res.render("home", {pageTitle : "home"});
 export const search = (req, res) => { 
-    const { query: {term: searchingBy}} = req
+   
+    const { 
+        query: {term: searchingBy}} 
+    = req
+    console.log(term)
     res.render("Search", {pageTitle: "search", searchingBy })
 };
 export const videos = (req, res) => res.render("videos", {pageTitle: "videos"});
