@@ -3,8 +3,8 @@ export const videos = [
         id: 11,
         title : "grape",
         description : 'melon',
-        view : 1111,
-        videoFile : "https://archive.org/details/BigBuckBunny_124",
+        views : 1111,
+        videoFile : "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         creator : {
             id : 111,
             name : "min",
@@ -15,8 +15,8 @@ export const videos = [
         id: 12,
         title : 'apple',
         description : 'banana',
-        view : 2222,
-        videoFile : "https://archive.org/details/BigBuckBunny_124",
+        views : 2222,
+        videoFile : "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         creator : {
             id : 112,
             name : "minn",
@@ -27,8 +27,8 @@ export const videos = [
         id: 13,
         title : 'milk',
         description : 'potato',
-        view : 3333,
-        videoFile : "https://archive.org/details/BigBuckBunny_124",
+        views : 3333,
+        videoFile : "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         creator : {
             id : 113,
             name : "ming",
