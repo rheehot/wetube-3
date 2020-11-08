@@ -20,7 +20,7 @@ app.use(morgan("dev"));
 app.use(
     helmet({ contentSecurityPolicy: { directives: { defaultSrc: ["*"] } } })
   );
-  
+
 app.use(localsMiddleware);
 
 app.use(routes.home, globalRouter);
