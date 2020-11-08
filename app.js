@@ -17,8 +17,10 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(morgan("dev"));
-app.use(helmet())
-
+app.use(
+    helmet({ contentSecurityPolicy: { directives: { defaultSrc: ["*"] } } })
+  );
+  
 app.use(localsMiddleware);
 
 app.use(routes.home, globalRouter);
